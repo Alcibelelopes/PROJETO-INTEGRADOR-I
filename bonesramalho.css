@@ -10,6 +10,22 @@ header {
 
 }
 
+.backgound_home {
+    width: 100%; 
+
+    height: 1080px;
+
+    margin: 24px; 
+
+    background-image: url('background home.png');
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh;
+}
+
 body {
 
     font-family: arial, sans-serif;
@@ -24,26 +40,7 @@ body {
 
 }
 
-.container {
-    width: 100%; 
-    margin: 0 auto; 
-    background-color: white; 
-    padding: 20px; 
-    text-align: center; 
-  }
-  
-  .imagens {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-  }
-  
-  .imagens img {
-    width: 200px; 
-    height: 200px; 
-    margin: 10px;
-  }
-footer {
+.footer {
 
     background-color: #ffffff;
 
@@ -57,47 +54,107 @@ footer {
 
 .menu {
     background-color: rgba(255, 255, 255, 0.8); 
+
     border-radius: 36px; 
+
     width: 1176px;
+
     height: 80px;
+
     margin: 20px auto;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-around;
+
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu button, .menu .logo {
+
     border: none;
+
     cursor: pointer;
+
     font-size: 14px;
+
     text-transform: uppercase;
+
     font-weight: bold;
+
     color: white;
 }
 
 .menu button {
     width: 144px;
+
     height: 42px;
+
     background-color: #021553;
+
     border-radius: 36px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
 .menu .logo {
     width: 130px;
+
     height: 130px;
+
     background-color: #021553;
+
     border-radius: 50%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     overflow: hidden;
 }
 
 .menu .logo img {
-    width: 70%;
-    height: auto;
+    width: 55%;
+
+    height: 70%;
 }
+
+.grandes_marcas {
+    width: 100%; 
+
+    height: 622px;
+
+    margin: 0 auto; 
+    background-color: white; 
+
+    padding: 20px; 
+
+    text-align: center; 
+  }
+  
+  .imagens {
+
+    display: grid; 
+
+    grid-template-columns: repeat(2,5fr);
+
+    grid-gap: 16px;
+  }
+
+  .imagens img {
+
+    width: 100%; 
+
+    height: auto; 
+    
+    margin: 10px;
+  }
+
