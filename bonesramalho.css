@@ -184,3 +184,23 @@ body {
 
 }
 
+@media (min-width:768px) {
+    .menu {
+      width: 100%; /*faz a menu preencher em telas maiores*/
+      flex-direction: row; /*alinha os itens horizontalmente*/
+    }
+    .menu .button, .menu.logo {
+      margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
+    }  
+}
+
+/*ajusta a proporcoes para telas medias*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .menu {
+    flex-direction: column;/*menu de itens vertical*/
+  }
+  .menu button, .menu.logo {
+    margin-bottom: 16px;/*adiciona um espaco entre os itens*/
+  }
+  
+}
