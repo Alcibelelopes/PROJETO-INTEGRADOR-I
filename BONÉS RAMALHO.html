@@ -3,10 +3,17 @@
     <head>
         <meta charset="UTF=8" />
         <meta name="viewort" content="width=devicewidth-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Bonés Ramalho</title>
         <link rel="stylesheet" href="bonesramalho.css" />
     </head>
     <body>
+
+        <body class="p-3 m-0 border-0 bd-example m-0 border-0"></body>
+
         <header>
 
             <nav>
@@ -17,7 +24,7 @@
                          <a href="#products"><button>Produtos</button></a>
                          <a href="#questions"><button>Dúvidas</button></a>
                             <a href="#home"><div class="logo"></a>
-                                 <img src="images/BONÉS RAMALHO - LOGO.png" alt="Logo Ramalho">
+                                 <img src="images/BONÉS RAMALHO - LOGO.png" class="img-fluid" alt="Logo Ramalho">
                             </div>
                          <a href="#about"><button>Sobre</button></a>
                          <a href="#contact"><button>Orçamentos</button></a>
@@ -39,7 +46,7 @@
 <!--todo: alterar caminhos para as pastas videos-->
                 <div class="welcome">
                     <div class="video-container">
-                        <video src="BonésPersonalizados.mp4" muted loop></video>
+                        <video src="videos/BonésPersonalizados.mp4" muted loop></video>
                     </div>
 
                     <div classe="description">
@@ -56,16 +63,44 @@
                 <h1>GRANDES MARCAS PRODUZEM COM A GENTE</h1>
                 <!--todo: alterar caminhos para as pastas images-->
                 <div classe="imagens">
-                    <img src="toyolex.png" alt="Toyolex">
-                    <img src="carnatal.png" alt="Carnatal">
-                    <img src="pratricia-lobo.png" alt="Patricia Lobo">
-                    <img src="hyundai.png" alt="Hyundai">
-                    <img src="man.png" alt="Man">
-                    <img src="tintas-mc.png" alt="Tintas MC">
-                    <img src="caminhoes.png" alt="VW Caminhões">
-                    <img src="atlanta-jeep.png" alt="Atlanta">
-                    <img src="via-diesel1.png" alt="via diesel">
-                    <img src="potiguar_honda.png" alt="Potiguar">
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/toyolex.png" class="img-fluid" alt="Toyolex">
+                        </div>
+                        <div class="col">
+                            <img src="images/carnatal.png" class="img-fluid" alt="Carnatal">
+                        </div>
+                        <div class="col">
+                            <img src="images/pratricia-lobo.png" class="img-fluid" alt="Patricia Lobo">
+                        </div>
+                        <div class="col">
+                            <img src="images/hyundai.png" class="img-fluid" alt="Hyundai">
+                        </div>
+                        <div class="col">
+                            <img src="images/man.png" class="img-fluid" alt="Man">
+                        </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/tintas-mc.png" class="img-fluid" alt="Tintas MC">
+                        </div>
+                        <div class="col">
+                            <img src="images/caminhoes.png" class="img-fluid" alt="VW Caminhões">
+                        </div>
+                        <div class="col">
+                            <img src="images/caminhoes.png" class="img-fluid" alt="VW Caminhões">
+                        </div>
+                        <div class="col">
+                            <img src="images/atlanta-jeep.png" class="img-fluid" alt="Atlanta">
+                        </div>
+                        <div class="col">
+                            <img src="images/via-diesel1.png" class="img-fluid" alt="via diesel">
+                        </div>
+                        <div class="col">
+                            <img src="images/potiguar_honda.png" class="img-fluid" alt="Potiguar">
+                        </div>
+                      
+                      </div>
+                 
                 </div>
 
             </div>
@@ -73,80 +108,124 @@
             <section id="products">
     
                 <h1>CONHEÇA NOSSOS MODELOS</h1>
-                <!--todo: alterar caminhos para as pastas images-->
+                
                 <section class="product-display">
-                    <div class="product-grid">
+                    <div class="product-grid"> 
                         <div class="trucker">
-                            <img src="TRUCKER.png" alt="Boné modelo trucker">
+                            <img src="images/TRUCKER.png" class="img-fluid" alt="Boné modelo trucker">
                             <h3>TRUCKER</h3>
                         </div>
                         <div class="americano">
-                            <img src="AMERICANO.png" alt="Boné modelo americano">
+                            <img src="images/AMERICANO.png" class="img-fluid" alt="Boné modelo americano">
                             <h3>AMERICANO</h3>
                         </div>
                         <div class="6 gomos">
-                            <img src="6 GOMOS.png" alt="boné modelo 6 gomos">
+                            <img src="images/6 GOMOS.png" class="img-fluid" alt="boné modelo 6 gomos">
                             <h3>6 GOMOS</h3>
                         </div>
                         <div class="6 gomos flex">
-                            <img src="6 GOMOS FLEX.png" alt="Boné modelo 6 gomos flex">
+                            <img src="images/6 GOMOS FLEX.png" class="img-fluid" alt="Boné modelo 6 gomos flex">
                             <h3>6 GOMOS FLEX</h3>
                         </div>
                         <div class="aba reta">
-                            <img src="ABA RETA.png" alt="Boné modelo aba reta">
+                            <img src="images/ABA RETA.png" class="img-fluid" alt="Boné modelo aba reta">
                             <h3>ABA RETA</h3>
                         </div>
                         <div class="dad hat">
-                            <img src="DAD HAT.png" alt="boné modelo dad hat">
+                            <img src="images/DAD HAT.png" class="img-fluid" alt="boné modelo dad hat">
                             <h3>DAD HAT</h3>
                         </div>
                         <div class="beisebol">
-                            <img src="BEISEBOL.png" alt="Boné modelo beisebol">
+                            <img src="images/BEISEBOL.png" class="img-fluid" alt="Boné modelo beisebol">
                              <h3>BEISEBOL</h3>
                         </div>
                         <div class="viseira sport">
-                            <img src="VISEIRA SPORT.png" alt="Boné viseira sport">
+                            <img src="images/VISEIRA SPORT.png" class="img-fluid" alt="Boné viseira sport">
                             <h3>VISEIRA SPORT</h3>
                         </div>
                         <div class="viseira supercap">
-                            <img src="VISEIRA SUPERCAP.png" alt="boné modelo viseira supercap">
+                            <img src="images/VISEIRA SUPERCAP.png" class="img-fluid" alt="boné modelo viseira supercap">
                             <h3>VISEIRA SUPERCAP</h3>
                         <div class="bucket hat">
-                            <img src="BUCKET HAT.png" alt="Boné modelo bucket hat">
+                            <img src="images/BUCKET HAT.png" class="img-fluid" alt="Boné modelo bucket hat">
                             <h3>BUCKET HAT</h3>
                         </div>
                         <div class="bucket flex">
-                            <img src="BUCKET FLEX.png" alt="Boné modelo bucket flex">
+                            <img src="images/BUCKET FLEX.png" class="img-fluid" alt="Boné modelo bucket flex">
                             <h3>BUCKET FLEX</h3>
                         </div>
                         <div class="chapéu de palha">
-                            <img src="PALHA.png" alt="chapéu de palha">
+                            <img src="images/PALHA.png" class="img-fluid" alt="chapéu de palha">
                             <h3>CHAPÉU DE PALHA</h3>
                         </div>
                         <div class="chapéu pierside">
-                            <img src="PIERSIDE.png" alt="chapéu pierside">
+                            <img src="images/PIERSIDE.png" class="img-fluid" alt="chapéu pierside">
                             <h3>CHAPEU PIERSIDE</h3>
                         </div>
                         <div class="long neck">
-                            <img src="PO.png" alt="porta long neck">
+                            <img src="images/PO.png" class="img-fluid" alt="porta long neck">
                             <h3>PORTA LONGNECK</h3>
                         </div>
                         <div class="copo">
-                            <img src="copo.png" alt="copos personalizados">
+                            <img src="images/copo.png" class="img-fluid" alt="copos personalizados">
                             <h3>COPOS PERSONALIZADOS</h3>
                         </div>
                         <div class="chaveiro">
-                            <img src="CHAVEIRO.png" alt="chaveiros personalizados">
+                            <img src="images/CHAVEIRO.png" class="img-fluid" alt="chaveiros personalizados">
                             <h3>CHAVEIROS PERSONALIZADOS</h3>
                         </div>
 
-                <h1>CONHEÇA NOSSOS MODELOS</h1>
-                <!--todo: alterar caminhos para as pastas images deopis de terminar o codigo-->
+                <h1>ADICIONAIS</h1>
+                <!--todo: colocar imagens do adicionais -->
                 <section class="product-add">
                     <div class="product-grid">
                         <div class="aplique3d">
-                            <img src=".png" alt="aplique 3D">
+                            <img src="images/.png" class="img-fluid" alt="aplique 3D">
                             <h3>APLIQUE 3D</h3>
+                        </div>
+                        <div class="couro">
+                            <img src="images/.png" class="img-fluid" alt="couro">
+                            <h3>COURO A LASER</h3>
+                        </div>
+                        <div class="furos">
+                            <img src="images/.png" class="img-fluid" alt="furos">
+                            <h3>FUROS A LASER</h3>
+                        </div>
+                        <div class="sanduiche">
+                            <img src="images/.png" class="img-fluid" alt="sanduiche">
+                            <h3>ABA SANDUÍCHE</h3>
+                        </div>
+                        <div class="abapersonalizada">
+                            <img src="images/.png" class="img-fluid" alt="aba personalizada">
+                            <h3>ABA PERSONALIZADA</h3>
+                        </div>
+                        <div class="ilhos">
+                            <img src="images/.png" class="img-fluid" alt="ilhos bordado">
+                            <h3>ILHOS BORDADO</h3>
+                        </div>
+                        <div class="rasgos">
+                            <img src="images/.png" class="img-fluid" alt="rasgos">
+                            <h3>RASGOS</h3>
+                        </div>
+                        <div class="fivela1">
+                            <img src="images/.png" class="img-fluid" alt="fivela 01">
+                            <h3>FIVELA METÁLICA 01</h3>
+                        </div>
+                        <div class="fivela2">
+                            <img src="images/.png" class="img-fluid" alt="fivela 02">
+                            <h3>FIVELA METÁLICA 02</h3>
+                        </div>
+                        <div class="forro">
+                            <img src="images/.png" class="img-fluid" alt="forro interno">
+                            <h3>FORRO INTERNO</h3>
+                        </div>
+                        <div class="vies">
+                            <img src="images/.png" class="img-fluid" alt="viés personalizados">
+                            <h3>VIÉS PERSONALIZADO</h3>
+                        </div>
+                        <div class="etiqueta">
+                            <img src="images/.png" class="img-fluid" alt="etiqueta interna">
+                            <h3>ETIQUETA INTERNA</h3>
                         </div>
 
 

@@ -9,7 +9,7 @@ header {
     width: 100%; 
     height: 1080px;
     margin: 24px; 
-    background-image: url('background home.png');
+    background-image: url('images/background home.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -69,8 +69,31 @@ body {
     width: 55%;
     height: 70%;
 }
+
+@media (min-width:768px) {
+  .menu {
+    width: 100%; /*faz a menu preencher em telas maiores*/
+    flex-direction: row; /*alinha os itens horizontalmente*/
+  }
+  .menu .button, .menu.logo {
+    margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
+  }  
+}
+
+/*ajusta a proporcoes para telas medias*/
+@media (min-width: 480px) and (max-width: 767px) 
+{
+
+.menu {
+  flex-direction: column;/*menu de itens vertical*/
+}
+.menu button, .menu.logo {
+  margin-bottom: 16px;/*adiciona um espaco entre os itens*/
+}
+}
  
 /* referente a área da pagina inicial que possuiu o video e texto sobre a empresa*/
+
 .welcome {
     width: 1176px;
     height: 588px;
@@ -135,6 +158,27 @@ body {
   .button:hover {
     background-color: #227913; 
   }
+
+  @media (min-width:768px) {
+    .welcome {
+      width: 100%; /*faz a menu preencher em telas maiores*/
+      flex-direction: row; /*alinha os itens horizontalmente*/
+    }
+    .welcome .video-container, .description {
+      margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
+    }  
+}
+
+/*ajusta a proporcoes para telas medias*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .welcome {
+    flex-direction: column;/*menu de itens vertical*/
+  }
+  .welcome .video-container, .description {
+    margin-bottom: 16px;/*adiciona um espaco entre os itens*/
+  }
+  
+}
   
   /* referente a area das empresas parceiras*/
 
@@ -161,7 +205,29 @@ body {
     height: auto; 
     margin: 10px;
   }
-
+  
+  @media (min-width:768px) {
+    .networking {
+      width: 100%; /*faz a menu preencher em telas maiores*/
+      flex-direction: row; /*alinha os itens horizontalmente*/
+    }
+    .imagens {
+      margin-right: 24px; /*adiciona um pouco de espaço entre os itens do menu */
+    }  
+  }
+  
+  /*ajusta a proporcoes para telas medias*/
+  @media (min-width: 480px) and (max-width: 767px) 
+  {
+  
+  .networking {
+    flex-direction: column;/*menu de itens vertical*/
+  }
+  
+  .imagens {
+    margin-bottom: 16px;/*adiciona um espaco entre os itens*/
+  }
+  }
   /* referente a area que faz a apresentaçã dos produtos*/
   
 .product-display {
@@ -184,23 +250,3 @@ body {
 
 }
 
-@media (min-width:768px) {
-    .menu {
-      width: 100%; /*faz a menu preencher em telas maiores*/
-      flex-direction: row; /*alinha os itens horizontalmente*/
-    }
-    .menu .button, .menu.logo {
-      margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
-    }  
-}
-
-/*ajusta a proporcoes para telas medias*/
-@media (min-width: 480px) and (max-width: 767px) {
-  .menu {
-    flex-direction: column;/*menu de itens vertical*/
-  }
-  .menu button, .menu.logo {
-    margin-bottom: 16px;/*adiciona um espaco entre os itens*/
-  }
-  
-}
