@@ -12,10 +12,8 @@
     </head>
     <body>
 
-        <body class="p-3 m-0 border-0 bd-example m-0 border-0"></body>
-
         <header>
-
+           
             <nav>
     
                 <ul>
@@ -33,17 +31,19 @@
                 </ul>
                    
             </nav>
-          
-            </header>
+
+            <figure class="banner-img">
+                <div classe= "banner-img">
+                    <img fetchpriority="high" width="1920" height="1080" src="images/backgroundhome.png" class="backgroundbanner" alt="background" style="background-color:#021553;" decoding="async" data-darkreader-inline-bgcolor="">				
+                </div>
+            </figure>
+                      
+        </header>
     
         <main>
-
-            <section id="home">
-
-                <div classe="background_home">
-                
-                </div>
-<!--todo: alterar caminhos para as pastas videos-->
+            
+                <section id="home">
+             
                 <div class="welcome">
                     <div class="video-container">
                         <video src="videos/BonésPersonalizados.mp4" class="object-fit-contain" width="295" height="496"></video>
@@ -55,14 +55,18 @@
                         <p>Somos uma fábrica de bonés em funcionamento desde 1995. Em todos esses  anos fornecemos os melhores bonés para todo o país. Nossa empresa  trabalha com bonés personalizados e promocionais a preço justo, fabricados com mão de obra especializada e alta tecnologia.</p>
 
                         <a href="#contact"><button>Fale Conosco</button></a>
-                    </div>     
+                    </div>
+                </div>  
+                   
             </section>
 
             <div class="networking">
 
-                <h1>GRANDES MARCAS PRODUZEM COM A GENTE</h1>
-                
-                <div classe="imagens">
+                <div classe="grandes_marcas", fluid>
+                    <p class="text-center">GRANDES MARCAS PRODUZEM COM A GENTE</p> 
+                </div>
+
+                <div classe="imagens_networking">
                     <div class="row">
                         <div class="col">
                             <img src="images/toyolex.png" class="img-fluid" alt="Toyolex">
@@ -79,6 +83,7 @@
                         <div class="col">
                             <img src="images/man.png" class="img-fluid" alt="Man">
                         </div>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <img src="images/tintas-mc.png" class="img-fluid" alt="Tintas MC">
@@ -98,7 +103,6 @@
                         <div class="col">
                             <img src="images/potiguar_honda.png" class="img-fluid" alt="Potiguar">
                         </div>
-                      
                     </div>
                  
                 </div>
@@ -109,7 +113,8 @@
     
                 <h1>CONHEÇA NOSSOS MODELOS</h1>
                 
-                <section class="product-display"> 
+                <section class="imagens"> 
+
                     <div class="product-grid">
 
                         <div class="row"> 
@@ -129,7 +134,7 @@
                             <img src="images/6 GOMOS FLEX.png" class="img-fluid img-thumbnail" width="255" height="255" alt="Boné modelo 6 gomos flex">
                             <h3>6 GOMOS FLEX</h3>
                         </div>
-
+                        </div>
                         <div class="row">
                         <div class="col">
                             <img src="images/ABA RETA.png" class="img-fluid img-thumbnail" width="255" height="255" alt="Boné modelo aba reta">
@@ -147,7 +152,7 @@
                             <img src="images/VISEIRA SPORT.png" class="img-fluid img-thumbnail" width="255" height="255" alt="Boné viseira sport">
                             <h3>VISEIRA SPORT</h3>
                         </div>
-
+                        </div>
                         <div class="row">
                         <div class="col">
                             <img src="images/VISEIRA SUPERCAP.png" class="img-fluid img-thumbnail" width="255" height="255" alt="boné modelo viseira supercap">
@@ -165,7 +170,6 @@
                             <h3>CHAPÉU DE PALHA</h3>
                         </div>
                         </div>
-
                         <div class="row">
                         <div class="col">
                             <img src="images/PIERSIDE.png" class="img-fluid img-thumbnail" width="255" height="255" alt="chapéu pierside">
@@ -183,6 +187,8 @@
                             <img src="images/CHAVEIRO.png" class="img-fluid img-thumbnail" width="255" height="255" alt="chaveiros personalizados">
                             <h3>CHAVEIROS PERSONALIZADOS</h3>
                         </div>
+                        </div>
+                        <a href="#contact"><button>Fale Conosco</button></a>
 
                     </div>
 
@@ -304,11 +310,32 @@
             </section>
     
             <section id="contact">
-    
-                <h1>ORÇAMENTOS</h1>
-    
-                <p>Preencha o formulário abaixo para solicitar seu orçamento personalizado.</p>
-    
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Formulário de Orçamento</title>
+                    <div class="form-container">
+                        <h1 class="form-title">ORÇAMENTOS</h1>
+                        <p>Preencha o formulário abaixo para solicitar seu orçamento personalizado.</p>
+                <form>
+                <div class="form-group">
+                    <label for="nome">NOME</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WHATSAPP</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required>
+                </div>
+                <div class="form-group">
+                    <label for="modelos">MODELOS</label>
+                    <input type="text" id="modelos" name="modelos" required>
+                </div>
+                <div class="form-group">
+                    <label for="segmento">SEGMENTO</label>
+                    <input type="text" id="segmento" name="segmento" required>
+                </div>
+                    <button type="button" class="form-button">CLIQUE AQUI PARA INSERIR SEU LOGO</button>
+                    <button type="submit" class="form-button">SOLICITAR ORÇAMENTO</button>
+                </form>
+                    
             </section>
             
     

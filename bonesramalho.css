@@ -16,7 +16,6 @@ header {
 }
 
 body {
-    font-family: arial, sans-serif;
     background-color: #021553;
     margin: 0;
     padding: 0;
@@ -98,14 +97,20 @@ body {
     width: 1176px;
     height: 588px;
     background-color: rgba(2, 21, 83, 0.85);
-    margin: 0 auto;
     display: flex; 
-    flex-direction: row; 
-    align-items: center; 
     padding: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
-  
+  .description a {
+    color: rgb(255, 255, 255);
+    transition: 1s;
+  }
+
+  .descripition a:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+  }
+
   .video-container {
     width: 295px; 
     height: 496px; 
@@ -186,13 +191,18 @@ body {
     width: 100%; 
     height: 622px;
     margin: 24px ; 
-    background-color:rgba(2, 21, 83); 
+    background-color:rgb(255, 255, 255);
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 28px;
+    color: rgba(2, 21, 83, 0.85);
     padding: 20px; 
-    text-align: center; 
+    text-align: center;
+    overflow: auto 
     
   }
-  
-  .imagens {
+
+    
+  .imagens_networking {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
@@ -200,7 +210,7 @@ body {
 
   }
 
-  .imagens img {
+  .imagens_networking img {
     width: 100%; 
     height: auto; 
     margin: 10px;
@@ -240,6 +250,36 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 24px; 
   }
+
+  /* referente a area do formulário*/
+
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-title { text-align: center; }
+  .form-group { margin-bottom: 15px; }
+  label { display: block; margin-bottom: 5px; }
+  input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .form-button:hover { background-color: #0056b3; }
   
 .footer {
 
