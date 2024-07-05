@@ -1,0 +1,154 @@
+header {
+    background-color: #021553;
+    color: #021553;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.backgound_home {
+    width: 100%; 
+    height: 1080px;
+    margin: 24px; 
+    background-image: url('images/background home.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #021553;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* referente a barra do menu inicial*/
+.menu {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 36px; 
+    width: 1176px;
+    height: 80px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu button, .menu .logo {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.menu button {
+    width: 144px;
+    height: 42px;
+    background-color: #021553;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .logo {
+    width: 130px;
+    height: 130px;
+    background-color: #021553;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu .logo img {
+    width: 55%;
+    height: 70%;
+}
+
+@media (min-width:768px) {
+    .menu {
+      width: 80%; /*faz a menu preencher em telas maiores*/
+      flex-direction: row; /*alinha os itens horizontalmente*/
+    }
+    .menu .button, .menu.logo {
+      margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
+    }  
+  }
+  
+  /*ajusta a proporcoes para telas medias*/
+  @media (min-width: 480px) and (max-width: 767px) 
+  {
+  
+  .menu {
+    flex-direction: column;/*menu de itens vertical*/
+  }
+  .menu button, .menu.logo {
+    margin-bottom: 16px;/*adiciona um espaco entre os itens*/
+  }
+  }
+
+  #home {
+    background-image: url(images/background\ home.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 700px;
+    width: 80%;
+    padding: 40px;
+    margin: 40px 20px 10px 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    background-color: #021553;
+    padding: 10px;
+  }
+
+  #conteudo {
+    position: absolute;
+    height: 550px;
+    width: 700px;
+    background-color: rgba(0, 0, 255, 0.158);
+    left: 25%;
+    top: 50%;
+  }
+
+  #video {
+    position:absolute;
+    border-radius: 50%;
+    color: white;
+    left: 5%;
+    top: 5%
+  }
+
+  #bem-vindo {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    left: 50%;
+    top: 10%;
+  }
+
+  #botao {
+    position: absolute;
+    left: 62%;
+    top: 75%; 
+  }
+
+  h3{
+    color: white;
+  }
+
+  p{
+    color: white;
+  }
+
+  h1{
+    color: white;
+  }
