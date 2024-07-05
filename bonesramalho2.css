@@ -1,8 +1,8 @@
 header {
-    background-color: #021553;
-    color: #021553;
-    text-align: center;
-    padding: 1rem 0;
+  background-color: #021553;
+  color: #021553;
+  text-align: center;
+  padding: 1rem 0
 }
 
 .backgound_home {
@@ -24,10 +24,10 @@ body {
 }
 
 /* referente a barra do menu inicial*/
-.menu {
-    background-color: rgba(255, 255, 255, 0.8); 
+#menu {
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 36px; 
-    width: 1176px;
+    width: 1170px;
     height: 80px;
     margin: 20px auto;
     display: flex;
@@ -36,7 +36,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.menu button, .menu .logo {
+#menu button, #menu .logo {
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -45,7 +45,7 @@ body {
     color: white;
 }
 
-.menu button {
+#menu button {
     width: 144px;
     height: 42px;
     background-color: #021553;
@@ -55,7 +55,7 @@ body {
     align-items: center;
 }
 
-.menu .logo {
+#menu .logo {
     width: 130px;
     height: 130px;
     background-color: #021553;
@@ -66,17 +66,17 @@ body {
     overflow: hidden;
 }
 
-.menu .logo img {
+#menu .logo img {
     width: 55%;
     height: 70%;
 }
 
 @media (min-width:768px) {
-    .menu {
-      width: 80%; /*faz a menu preencher em telas maiores*/
+    #menu {
+      width: 110%; /*faz a menu preencher em telas maiores*/
       flex-direction: row; /*alinha os itens horizontalmente*/
     }
-    .menu .button, .menu.logo {
+    #menu button, #menu .logo {
       margin-right: 16px; /*adiciona um pouco de espaço entre os itens do menu */
     }  
   }
@@ -85,10 +85,10 @@ body {
   @media (min-width: 480px) and (max-width: 767px) 
   {
   
-  .menu {
+  #menu {
     flex-direction: column;/*menu de itens vertical*/
   }
-  .menu button, .menu.logo {
+  #menu button, #menu .logo {
     margin-bottom: 16px;/*adiciona um espaco entre os itens*/
   }
   }
@@ -97,7 +97,7 @@ body {
     background-image: url(images/backgroundhome.png);
     background-size: 100% 100%;
     position: absolute;
-    height: 700px;
+    height: 800px;
     width: 80%;
     padding: 40px;
     margin: 40px 20px 10px 200px;
@@ -117,11 +117,12 @@ body {
     background-color: rgba(0, 0, 255, 0.158);
     left: 25%;
     top: 50%;
+    border-radius: 20px;
   }
 
   #video {
     position:absolute;
-    border-radius: 50%;
+    border-radius: 10px;
     color: white;
     left: 5%;
     top: 5%
@@ -139,6 +140,13 @@ body {
     position: absolute;
     left: 62%;
     top: 75%; 
+  }
+
+  .btn-green {
+    background-color: green;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
   }
 
   h3{
